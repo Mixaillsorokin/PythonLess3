@@ -4,3 +4,16 @@
 # Пример:
 
 # - [1.1, 1.2, 3.1, 5, 10.01] => 0.19
+
+
+S=[1.1, 1.2, 3.1, 5, 10.01]
+max=0
+min=1
+res=0
+for i in S:
+    if (i-int(i))>=max:
+        max=i-int(i)
+    if (i-int(i))<=min:
+         min=i-int(i)
+    res=max-min        
+print(f'{S} => {res}')
