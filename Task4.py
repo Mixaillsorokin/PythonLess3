@@ -5,3 +5,10 @@
 # - 45 -> 101101
 # - 3 -> 11
 # - 2 -> 10
+
+N=int(input('N =: '))
+res=''
+while N!=0:
+    res=str(N%2)+res
+    N//=2
+print(res)
