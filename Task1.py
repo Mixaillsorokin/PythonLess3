@@ -3,3 +3,14 @@
 # Пример:
 
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
+listik=[2, 4, 5, -3, -4,]
+li=[]
+sum=0
+index=0
+for i in listik:
+    if index%2==1:
+        li.append(i)  
+    index+=1 
+for i in li:
+    sum+=i   
+print(f'{listik} ->на нечётных позициях элементы {li[0]} и {li[1]}, ответ: {sum}')
